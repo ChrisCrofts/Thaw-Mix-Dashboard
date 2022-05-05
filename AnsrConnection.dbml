@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbANSRLTR_PROD" Class="AnsrConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ANSRLTR;Initial Catalog=dbANSRLTR_PROD;User ID=SuppSrvcsIT" SettingsObjectName="Thaw_Mix_Dashboard.Properties.Settings" SettingsPropertyName="dbANSRLTR_PRODConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblDepartment" Member="tblDepartments">
+    <Type Name="tblDepartment">
+      <Column Name="DEPT_ID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ABBREV_NAME" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="DEPT_HEAD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DIV_ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MEDICAL_DIRECTOR" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="INACTIVE_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CHANGE_BY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CHANGE_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Dept_Head_Override_Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEmployee" Member="tblEmployees">
+    <Type Name="tblEmployee">
+      <Column Name="EMPLOYEE_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FIRST_NAME" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MID_INITIAL" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_NAME" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SALES_REP_CODE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SHORT_CREDENTIAL" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="ADRS_LINE1" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="ADRS_LINE2" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="CITY" Type="System.String" DbType="VarChar(28) NOT NULL" CanBeNull="false" />
+      <Column Name="STATE" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ZIP_CODE" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="COUNTRY" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="HOME_PHONE_NUM" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="WORK_PHONE_NUM" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="WORK_PHONE_EXT" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="WORK_PHONE_FAX" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PAGER_PHONE_NUM" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="DEPT_ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="WORK_LOC_ID" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="LAN_ID" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="COMPUTER_NAME" Type="System.String" DbType="VarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="COMPUTER_ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MAIL_NAME" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTE_REMINDER_TO_WHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PRI_DEPT_CONTACT" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="SEND_EMAIL_VIA" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="HIRE_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PENDING_TERM_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TERMINATE_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TERMINATE_WHY" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="RECORD_TYPE" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="COMMENT" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CHANGE_BY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CHANGE_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Supervisor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Manager" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Hours" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DEPT_HIRE_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="POSITION_HIRE_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SPONSOR_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PREFERRED_NAME" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LOCKER_NUMBER" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="LOCKER_COMBINATION" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="WORK_TEAM_NUMBER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ER_CONTACT_NAME" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ER_CONTACT_PHONE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="YEARS_LAB_EXPERIENCE" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="ARUP_LAB_EXPERIENCE" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="LIS_SIGNON" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="PERF_REVIEW_WHEN" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PERF_REVIEW_TYPE" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="TESTING_ELIGIBILITY" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="DIVISIONMANAGERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Email_Address" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ESPConnection">
+  <DataContextMoniker Name="/ESPConnectionDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4766bb20-c53e-4ac0-a653-ae0707420134" absoluteBounds="5.125, 1.75, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/ESPConnectionDataContext/RoutedContainer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a40bb07f-249a-4959-bec6-3246a2ffd9e1" absoluteBounds="5.14, 2.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba54e7ec-e926-440c-bde5-28fe0cb4ed46" absoluteBounds="7.875, 2.125, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/ESPConnectionDataContext/OrderedTest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6efae873-2510-440f-82c8-c338a4ce6034" absoluteBounds="7.89, 2.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="469145cc-c781-4fb0-ae6c-d30057cdefc7" absoluteBounds="3, 1.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ESPConnectionDataContext/Container_OrderedTest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b0901da-d054-46dd-be6c-25e4bafedfeb" absoluteBounds="3.0149999999999997, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 12.375" name="AnsrConnection">
+  <DataContextMoniker Name="/AnsrConnectionDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7829b8a2-c168-4e51-9c98-98a245842949" absoluteBounds="3.25, 1.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AnsrConnectionDataContext/tblDepartment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24b1fdd2-e28f-455a-ac7b-6bd6d2314ecc" absoluteBounds="3.2649999999999997, 1.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf359d55-70b6-4aa8-b621-c4c62a01e7f9" absoluteBounds="6.625, 0.5, 2, 11.578269856770833">
+      <DataClassMoniker Name="/AnsrConnectionDataContext/tblEmployee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63fea4bf-5914-4f1d-bc96-2a34b997f808" absoluteBounds="6.6400000000000006, 0.96, 1.9700000000000002, 11.018269856770832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
